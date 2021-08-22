@@ -4,7 +4,7 @@ import MenuItem from "../menu-item/menu-item.component";
 
 import "./directory.styles.scss";
 
-const Directory = () => {
+function Directory() {
   const sections = [
     {
       title: "hats",
@@ -43,10 +43,10 @@ const Directory = () => {
   return (
     <div className="directory-menu">
       {sections.map(({ id, ...otherSectionProps }) => (
-        <MenuItem key={id} {...otherSectionProps}/>
+        <MenuItem key={id} {...otherSectionProps} />
       ))}
     </div>
   );
-};
+}
 
 export default Directory;
