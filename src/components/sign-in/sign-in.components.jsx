@@ -8,7 +8,7 @@ import { signInWithGoogle } from "../../firebase/firebase.utils";
 import "./sign-in.styles.scss";
 
 const SignIn = () => {
-  const [state, setState] = useState({});
+  const [state, setState] = useState({ email: "", password: "" });
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -17,7 +17,6 @@ const SignIn = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-
     setState({ ...state, [name]: value });
   };
 
