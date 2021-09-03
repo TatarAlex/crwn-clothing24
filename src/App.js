@@ -3,11 +3,11 @@ import { Switch, Route, Redirect } from "react-router-dom";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 
-import HomePage from "./page/homepage/homepage.component.jsx";
-import ShopPage from "./page/shop/shop.component.jsx";
+import HomePage from "./pages/homepage/homepage.component.jsx";
+import ShopPage from "./pages/shop/shop.component.jsx";
 import Header from "./components/header/header.component.jsx";
-import SignInAndSignUp from "./page/sign-in-and-sign-up/sign-in-and-sign-up.components.jsx";
-import CheckoutPage from "./page/checkout/checkout.component.jsx";
+import SignInAndSignUp from "./pages/sign-in-and-sign-up/sign-in-and-sign-up.components.jsx";
+import CheckoutPage from "./pages/checkout/checkout.component.jsx";
 
 import { auth, createUserProfileDocument } from "./firebase/firebase.utils.js";
 import { setCurrentUser } from "./redux/user/user.actions";
